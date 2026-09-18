@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Table Output</title>
+<style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+</style>
+</head>
+<body>
+
+<table>
+<thead>
+<tr>
+<th>Country</th>
+<th colspan="2">Population (In Crores)</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr>
+<td rowspan="3">INDIA</td>
+<td>1998</td>
+<td>85</td>
+</tr>
+<tr>
+<td>1999</td>
+<td>90</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>100</td>
+</tr>
+
+<tr>
+<td rowspan="3">USA</td>
+<td>1998</td>
+<td>30</td>
+</tr>
+<tr>
+<td>1999</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>2000</td>
+            <td>40</td>
+        </tr>
+
+        <!-- UK Section -->
+        <tr>
+            <td rowspan="3">UK</td>
+            <td>1998</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>1999</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>2000</td>
+            <td>35</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

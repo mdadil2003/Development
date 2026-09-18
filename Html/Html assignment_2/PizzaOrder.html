@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pizza Order Form</title>
+</head>
+<body bgcolor="green">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <br><br>
+
+        <label for="size">Pizza Size:</label>
+        <select id="size" name="size" required>
+            <option value="">Select Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br><br>
+
+        <label for="toppings">Toppings:</label><br>
+        <input type="checkbox" id="pepperoni" name="toppings[]" value="Pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+        <input type="checkbox" id="mushrooms" name="toppings[]" value="Mushrooms">
+        <label for="mushrooms">Mushrooms</label><br>
+        <input type="checkbox" id="onions" name="toppings[]" value="Onions">
+        <label for="onions">Onions</label><br>
+        <input type="checkbox" id="extra_cheese" name="toppings[]" value="Extra Cheese">
+        <label for="extra_cheese">Extra Cheese</label><br><br>
+
+        <input type="submit" value="Deliver Order"> 
+        <input type="reset" value="Clear Order">
+        <br>
+        <textarea rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+    </form>
+
+</body>
+</html>
