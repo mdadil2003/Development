@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>Styled Form</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        .container{
+            width: 70%;
+            margin: auto;
+            border: 3px solid lightblue;
+            padding: 10px;
+        }
+
+        h2{
+            margin-top: 0;
+        }
+
+        form{
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        input[type=text], select{
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type=submit]{
+            width: 100%;
+            background-color: green;
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover{
+            background-color: darkgreen;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Using CSS to style an HTML Form</h2>
+
+    <form>
+
+        <label>First Name</label>
+        <input type="text" placeholder="Your name..">
+
+        <label>Last Name</label>
+        <input type="text" placeholder="Your last name..">
+
+        <label>Country</label>
+
+        <select>
+            <option>Australia</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>Canada</option>
+        </select>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</div>
+
+</body>
+</html>
