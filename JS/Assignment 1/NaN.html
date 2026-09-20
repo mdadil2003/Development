@@ -1,0 +1,22 @@
+<!-- Q4: Write a JavaScript program that asks the user to enter a number and checks if it is NaN (Not a Number).  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Message</title>
+</head>
+<body>
+    <h1><center>Welcome</center></h1>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+     <button onclick="check()">Submit</button>
+     <p id="one"></p>
+     <script>
+        function check() {
+            var name = document.getElementById("nameInput").value;
+           document.getElementById("one").innerHTML = "Hello " + name + ", welcome to my website!";
+        }
+     </script>
+</body>
+</html>

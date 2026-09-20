@@ -1,0 +1,24 @@
+<!-- Q 1. Write a JavaScript program to check the entered no in textbox should be between 1 and 10. If correct no is not entered then alert should be displayed: input is ok otherwise input is not ok. -->
+
+<html>
+<head>
+    <title>Check Number</title>
+    <script>
+        function checkNumber()
+        {
+            var num = document.getElementById("n").value;
+            if(num>=1 && num<=10){
+                alert("input is OK");
+            }
+            else{
+                alert("input is not OK");
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter Number:
+    <input type="text" id="n">
+    <button onclick="checkNumber()">Check</button>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!-- Q 2.  Write a JavaScript program to print your first name and last name of two textboxes in a paragraph (id ="one"). -->
+
+<html>
+<head>
+    <title>Name Display</title>
+    <script>
+        function displayName()
+        {
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+
+            document.getElementById("one").innerHTML =
+                "First Name: " + fname + "<br>" +
+                "Last Name: " + lname;
+        }
+    </script>
+</head>
+<body>
+    First Name:
+    <input type="text" id="fname">
+    <br><br>
+    Last Name:
+    <input type="text" id="lname">
+    <br><br>
+    <button onclick="displayName()">Display</button>
+    <p id="one"></p>
+</body>
+</html>
