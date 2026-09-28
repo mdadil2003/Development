@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 id="college">Centre for Development of Advanced Computing</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h2>Student Registration Form</h2>
+
+    <form id="regForm">
+
+        <label>Student Name</label>
+        <input type="text" id="name">
+
+        <label>Email</label>
+        <input type="text" id="email">
+
+        <label>Mobile Number</label>
+        <input type="text" id="mobile">
+
+        <label>Date of Birth</label>
+        <input type="date" id="dob">
+
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+
+        <br>
+
+        <label>Course</label>
+        <select id="course">
+            <option value="">Select Course</option>
+            <option>PGDAC</option>
+            <option>PGDAI</option>
+            <option>PGDBDA</option>
+        </select>
+
+        <label>Address</label>
+        <textarea id="address"></textarea>
+
+        <label>Password</label>
+        <input type="password" id="password">
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword">
+
+        <input type="button" value="Submit" onclick="validateForm()">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
